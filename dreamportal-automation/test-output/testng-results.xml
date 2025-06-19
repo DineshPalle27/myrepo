@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-18T20:06:40 IST" name="Suite" finished-at="2025-06-18T20:07:13 IST" duration-ms="33533">
+    <groups>
+    </groups>
+    <test started-at="2025-06-18T20:06:40 IST" name="Test" finished-at="2025-06-18T20:07:13 IST" duration-ms="33533">
+      <class name="tests.DreamPortalTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DreamPortalTest@3754a4bf]" started-at="2025-06-18T20:06:40 IST" name="setup" finished-at="2025-06-18T20:07:04 IST" duration-ms="23850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAndClickDreamButton()[pri:1, instance:tests.DreamPortalTest@3754a4bf]" started-at="2025-06-18T20:07:04 IST" name="verifyAndClickDreamButton" finished-at="2025-06-18T20:07:09 IST" duration-ms="5011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAndClickDreamButton -->
+        <test-method signature="validateDreamTableEntries()[pri:2, instance:tests.DreamPortalTest@3754a4bf]" started-at="2025-06-18T20:07:09 IST" name="validateDreamTableEntries" finished-at="2025-06-18T20:07:11 IST" depends-on-methods="tests.DreamPortalTest.verifyAndClickDreamButton" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDreamTableEntries -->
+        <test-method signature="validateDreamStats()[pri:3, instance:tests.DreamPortalTest@3754a4bf]" started-at="2025-06-18T20:07:11 IST" name="validateDreamStats" finished-at="2025-06-18T20:07:11 IST" depends-on-methods="tests.DreamPortalTest.verifyAndClickDreamButton" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDreamStats -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DreamPortalTest@3754a4bf]" started-at="2025-06-18T20:07:11 IST" name="tearDown" finished-at="2025-06-18T20:07:13 IST" duration-ms="1806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DreamPortalTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
