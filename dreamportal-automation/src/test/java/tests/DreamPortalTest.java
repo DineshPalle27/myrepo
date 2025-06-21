@@ -58,6 +58,13 @@ public class DreamPortalTest extends BaseTest
 	        Assert.assertEquals(statsPage.getStatByRow(3), "Total Dreams 10");
 	        Assert.assertEquals(statsPage.getStatByRow(4), "Dreams This Week 7");
 	        Assert.assertEquals(statsPage.getStatByRow(5), "Recurring Dreams 2");
+
+		 driver.switchTo().window(tabs.get(1));
+	       DreamsDiary diary = new DreamsDiary(driver);
+	        List<String> recurring = diary.getRecurringDreams();
+	        Assert.assertTrue(recurring.contains("Flying over mountains"));
+	        Assert.assertTrue(recurring.contains("Lost in maze"));
 	    }
+	
 
 }
