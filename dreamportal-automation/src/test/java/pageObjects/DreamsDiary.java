@@ -38,4 +38,25 @@ public class DreamsDiary
 		 }
 		 return true;
 	}
+	public List<String> getRecurringDreams() {
+        List<WebElement> rows = driver.findElements(By.xpath("//table/tbody/tr"));
+        Map<String, Integer> countMap = new HashMap<String, Integer>();
+        List<String> recurring = new ArrayList<String>();
+
+        for (int i = 1; i <= rows.size(); i++) {
+            String name = driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[1]")).getText().trim();
+
+            if (countMap.containsKey(name)) {
+                int count = countMap.get(name) + 1;
+                countMap.put(name, count);
+                if (count == 2) {
+                    recurring.add(name);
+                }
+            } else {
+                countMap.put(name, 1);
+            }
+        }
+
+        return recurring;
+    }
 }
